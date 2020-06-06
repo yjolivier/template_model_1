@@ -2,12 +2,12 @@
   <div class="row header-content">
     <div class="card-top col-12">
       <div class="row card-top-content">
-        <div class="logo-l-container col-2">
+        <div class="logo-l-container col-1">
           <div class="logo-l-content">
             <img src="img/otoi.png" alt="logo">
           </div>
         </div>
-        <menu class="col-10">
+        <menu class="col-11">
           <input type="checkbox" id="check">
           <label for="check">
             <i class="fas fa-bars" id="btn"></i>
