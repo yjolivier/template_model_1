@@ -1,0 +1,626 @@
+$first-color: #41B3A3;
+$second-color: #FFFFFF;
+$third-color: rgba(142,68,173,0.05);
+$first-font: 'roboto';
+
+*{
+  font-family: $first-font;
+}
+body,.row{
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+.col-lg-12, .col-12,.col-md-6,.col-lg-12,.col-lg-4,.col-lg-6,.col-lg-8,.container-fluid,.col-8,.col-2,.col-6,.col-10{
+  padding: 0;
+}
+
+/*
+===========================================================================================
+1. header
+===========================================================================================
+*/
+
+header {
+  .header-content{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(65,179,163,0.46), rgba(78,78,78,0.46));
+    .card-top{
+      .card-top-content{
+        height: 100px;
+        align-content: center;
+        align-items: center;
+        padding: 0 100px 0 100px;
+      }
+    }
+    .logo-l-container .logo-l-content{
+      height: auto;
+      width: 65px;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    menu{
+      #check{
+        display: none;
+      }
+      label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        padding: 6px 9px;
+        display: none;
+      }
+      label #btn{
+        &:hover{
+          color: $first-color;
+        }
+        transition: all .2s;
+        right: 45px;
+        color: $second-color;
+        font-size: 30px;
+      }
+      label #cancel{
+        &:hover{
+          color: $first-color;
+        }
+        transition: all .5s;
+        color: $second-color;
+        font-size: 25px;
+        right: 45px;
+      }
+      ul{
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        li a{
+          text-decoration: none;
+          color: $second-color;
+          font-size: 16px;
+          margin-right: 15px;
+          padding: 10px 20px 10px 20px;
+          font-family: $first-color;
+          text-transform: uppercase;
+          transition: background-color 0.4s ease-in-out;
+          &:hover{
+            background-color: $first-color;
+          }
+        }
+      }
+    }
+    .card-bottom{
+      height: 80px;
+      padding-left: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1{
+        font-size: 50px;
+        color: $second-color;
+        width: 60%;
+      }
+      .card-btn{
+        a{
+          text-decoration: none;
+          color: $second-color;
+          font-size: 20px;
+          padding: 10px 20px 10px 20px;
+          border: 3px solid $first-color;
+          border-radius: 5px;
+          margin-right: 15px;
+          transition: background-color 0.4s ease-in-out;
+          &:hover{
+            background-color: $first-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+===========================================================================================
+2. presentation-section
+===========================================================================================
+*/
+.presentation-section{
+  overflow: hidden;
+  .card-text{
+    padding:50px 100px 50px 100px;
+    background-color: $third-color;
+    h2{
+      color: $first-color;
+    }
+    p{
+      line-height: 30px;
+      font-size: 16px;
+      opacity: 0.65;
+    }
+    a{
+      text-decoration: none;
+      color: $first-color;
+      font-size: 20px;
+      padding: 10px 20px 10px 20px;
+      border: 3px solid $first-color;
+      border-radius: 5px;
+      margin-top: 15px;
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        background-color: $first-color;
+        color: $second-color;
+      }
+    }
+  }
+  .card-img{
+    background-color: $second-color;
+    padding:50px 100px 0px 50px;
+    margin-bottom: 20px;
+    height: 400px;
+    .img-container{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 7px;
+        transition: transform 0.4s ease-in-out;
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+/*
+===========================================================================================
+3. info section 
+===========================================================================================
+*/
+.info-section{
+  padding: 50px 100px 50px 100px;
+  background-color: $third-color;
+  h2{
+    color: $first-color;
+    text-align: center;
+  }
+  .card-container{
+    i{
+      padding-top: 25px;
+      line-height: 30px;
+      font-size: 30px;
+      opacity: 0.65;
+      text-align: center;
+      padding-left: 15px;
+    }
+    padding: 10px;
+    .card-body{
+      a{
+        text-decoration: none;
+        color: #000;
+        line-height: 30px;
+        font-size: 16px;
+        opacity: 0.65;
+      }
+    }
+  }
+}
+
+/*
+===========================================================================================
+4. parallax-section 
+===========================================================================================
+*/
+.parallax-section{
+  .parallax-content{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    background-color: rgba(65,179,163,0.46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: $second-color;
+    h2{
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
+
+/*
+===========================================================================================
+5. section-article 
+===========================================================================================
+*/
+.section-article{
+  padding: 50px 100px 50px 100px;
+  .card-left{
+    position: relative;
+    height: 500px;
+    overflow-y: hidden;
+    .card-text{
+      position: absolute;
+      bottom: 40px;
+      color: $second-color;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      h3{
+        font-size: 25px;
+      }
+      a{
+        color: $first-color;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 20px 8px 20px;
+        border-radius: 7px;
+        border: 2px solid $first-color;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+          background-color: $first-color;
+          color: $second-color;
+        }
+      }
+    }
+    .card-img{
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      img{
+        max-width: 100%;
+        height: auto;
+        opacity: 0.65;
+      }
+    }
+  }
+  .card-right{
+    .card-container{
+      height: 250px;
+      padding-left: 10px;
+      overflow: hidden;
+      .card-img{
+        overflow: hidden;
+        img{
+          height: auto;
+          max-width: 100%;
+        }
+      }
+      .card-body{
+        padding-left: 10px;
+        overflow: hidden;
+        background-color: $third-color;
+        p{
+          color: #000;
+          line-height: 20px;
+          font-size: 15px;
+          opacity: 0.65;
+        }
+        a{
+          color: $first-color;
+          text-decoration: none;
+          font-size: 15px;
+          padding: 11px 8px 11px 8px;
+          border-radius: 50%;
+          border: 2px solid $first-color;
+          transition: all 0.4s ease-in-out;
+          &:hover{
+            background-color: $first-color;
+            color: $second-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+===========================================================================================
+6. footer-section 
+===========================================================================================
+*/
+footer.col-12{padding: 50px 100px 50px 100px;}
+footer{
+  padding: 0;
+  background-color: #000;
+  color: $second-color;
+  .description{
+    height: 50%;
+    padding-left: 0;
+    h2{
+      font-family: $first-font;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $first-color;
+    }
+    p{
+      opacity: 0.7;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+  .social{
+    padding: 0;
+    ul{
+      list-style: none;
+      text-align: right;
+      padding: 0;
+      li{
+        height: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+       a{
+        &:hover{
+          font-size: 20px;
+          color: $first-color;
+        }
+        transition: all 0.4s;
+        text-decoration: none;
+        color: $second-color;
+        font-size: 0;
+        padding:0;
+        i{
+          margin-left: 16px;
+          font-size: 28px;
+        }
+      }
+
+    }
+  }
+  .signature{
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.4;
+    a{
+      text-decoration: none;
+      color: $first-color;
+      opacity: 1;
+    }
+  }
+}
+
+/*
+===========================================================================================
+. Responsivité
+===========================================================================================
+*/
+@media screen and (max-width: 1200px) {
+  .section-article{
+    .card-left{
+      height: 400px;
+    }
+    .card-right{
+      .card-container{
+        height: 200px;
+        padding-left: 5px;
+        .card-body{
+          padding-left: 10px;
+          h3{
+            margin-top: 0;
+            margin-bottom: 5px;
+          }
+          p{
+            margin-top: 5px;
+            height: 100px;
+            overflow: hidden;
+          }
+          a{
+            font-size: 10px;
+            padding: 8px 6px 8px 6px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  header {
+    .header-content{
+      .card-top{
+        .card-top-content{
+          padding: 0 50px 0 50px;
+        }
+      }
+      menu{
+        label #btn{
+          right: 20px;
+        }
+        ul{
+          li a{
+            font-size: 15px;
+            margin-right: 0px;
+            padding: 8px 18px 8px 18px;
+          }
+        }
+      }
+      .card-bottom{
+        height: 80px;
+        padding-left: 50px;
+        h1{
+          font-size: 45px;
+          width: 90%;
+        }
+        .card-btn{
+          a{
+            font-size: 16px;
+            padding: 8px 18px 8px 18px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  
+  .presentation-section{
+    .card-text,.card-img{
+      padding: 50px;
+    }
+    .card-text{
+      order: 2;
+      p{
+        height: 200px;
+        overflow: hidden;
+      }
+    }
+    .card-img{
+      order: 1;
+    }
+  }
+  .info-section, .section-article{
+    padding: 50px;
+  }
+  .section-article{
+    .card-left{
+      height: 450px;
+      .card-text{
+        h3{
+          font-size: 25px;
+        }
+        a{
+          color: $first-color;
+          text-decoration: none;
+          font-size: 18px;
+          padding: 8px 20px 8px 20px;
+          border-radius: 7px;
+          border: 2px solid $first-color;
+          transition: all 0.4s ease-in-out;
+          &:hover{
+            background-color: $first-color;
+            color: $second-color;
+          }
+        }
+      }
+      .card-img{
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        img{
+          max-width: 100%;
+          height: auto;
+          opacity: 0.65;
+        }
+      }
+    }
+    .card-right{
+      .card-container{
+        padding-left: 0px;
+        padding-top: 10px;
+        .card-body{
+          padding-left: 10px;
+          overflow: hidden;
+          background-color: $third-color;
+          p{
+            color: #000;
+            line-height: 20px;
+            font-size: 15px;
+            opacity: 0.65;
+          }
+          a{
+            color: $first-color;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 11px 8px 11px 8px;
+            border-radius: 50%;
+            border: 2px solid $first-color;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+              background-color: $first-color;
+              color: $second-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  header {
+    .header-content{
+      menu{
+        #check:checked ~ ul{
+          right: 0;
+        }
+        #check:checked ~ label #btn{
+          right: 250px;
+          pointer-events: none;
+          opacity: 0;
+        }
+        #check:checked ~ label #cancel{
+          right: 45px;
+        }
+        label #btn, label #cancel{
+          display: block;
+          top: -22px;
+        }
+        label #cancel{
+          display: block;
+          right: -200px;
+          color: $first-color;
+          z-index: 111;
+        }
+        ul{
+          position: fixed;
+          top: 0;
+          right: -100vw;
+          flex-direction: column;
+          justify-content: start;
+          width: 100vw;
+          background: #fff;
+          height: 100vh;
+          z-index: 4;
+          transition: all .2s;
+          li a {
+            color: #000;
+          }
+        }
+        a {
+          display: block;
+          height: 100%;
+          width: 100%;
+          line-height: 60px;
+          font-size: 20px;
+          box-sizing: border-box;
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
+  .presentation-section{
+    .card-img{
+      padding-bottom: 0px;
+    }
+    .card-text{
+      background-color: $second-color;
+      padding-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .presentation-section{
+    .card-text,.card-img{
+      padding: 20px;
+    }
+    .card-img{
+      height: 200px;
+    }
+  }
+  .info-section{padding: 20px}
+  .parallax-section{
+    .parallax-content{
+      h2{
+        width: 90%;
+      }
+    }
+  }
+  footer.col-12, .section-article{
+    padding: 20px;
+  }
+}
